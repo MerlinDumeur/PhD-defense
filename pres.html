@@ -26,7 +26,7 @@
     ul.task-list{list-style: none;}
     ul.task-list li input[type="checkbox"] {
       width: 0.8em;
-      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */
       vertical-align: middle;
     }
     /* CSS for syntax highlighting */
@@ -146,12 +146,12 @@
     }
     .reveal .footnotes ol {
       counter-reset: ol;
-      list-style-type: none; 
+      list-style-type: none;
       margin-left: 0;
     }
     .reveal .footnotes ol li:before {
       counter-increment: ol;
-      content: counter(ol) ". "; 
+      content: counter(ol) ". ";
     }
     .reveal .footnotes ol li > p:first-child {
       display: inline-block;
@@ -193,19 +193,19 @@
     .reveal .slide > img.r-stretch.quarto-figure-center {
       display: block;
       margin-left: auto;
-      margin-right: auto; 
+      margin-right: auto;
     }
     .reveal .slide > img.stretch.quarto-figure-left,
     .reveal .slide > img.r-stretch.quarto-figure-left  {
       display: block;
       margin-left: 0;
-      margin-right: auto; 
+      margin-right: auto;
     }
     .reveal .slide > img.stretch.quarto-figure-right,
     .reveal .slide > img.r-stretch.quarto-figure-right  {
       display: block;
       margin-left: auto;
-      margin-right: 0; 
+      margin-right: 0;
     }
   </style>
 </head>
@@ -219,7 +219,7 @@
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
 <div class="quarto-title-author-name">
-Merlin Dumeur 
+Merlin Dumeur
 </div>
         <p class="quarto-title-affiliation">
             Université Paris Saclay &amp; Aalto University
@@ -329,12 +329,20 @@ Merlin Dumeur
 <li class="fragment">Invariant to rescaling operations: <span class="math inline">\(\color{#CC5500}{f}(x/b) = cst \cdot b^{\color{red}{a}} x^{-\color{red}{a}} \propto x^{-\color{red}{a}} \,.\)</span></li>
 <li class="fragment">Appears as a linear relation in log-log space: <span class="math display">\[\log \color{#CC5500}{f} \propto {-\color{red}{a}} \log x\]</span></li>
 </ul></li>
-<!-- <li class="fragment">In MEG recordings, we observe power-law scaling in DFA analysis<span class="citation" data-cites="Hansen2001"><sup>1</sup></span>: <img data-src="figures/DFA_Hansen.png" class="" style="position: absolute; bottom: 5%; right:0%" height="900" alt="DFA shows scale invariance in MEG alpha band envelope"> -->
+<li class="fragment">In MEG recordings, we observe power-law scaling in DFA analysis<span class="citation" data-cites="Hansen2001"><sup>1</sup></span>:
 <ul>
 <li class="fragment"><span class="math inline">\(\langle \color{#CC5500}{F}(\tau) \rangle\)</span>: average detrended variance across all time windows <span class="math inline">\(\tau\)</span>; <span class="math display">\[ \log \langle \color{#CC5500}{F} (\tau) \rangle \propto \color{red}{\alpha} \log \tau \,.\]</span></li>
 <li class="fragment">Careful selection of window sizes.</li>
 </ul></li>
 </ul>
+</div>
+<div class="absolute fragment" style="bottom: 5%; right:0%;" data-fragment-index="4">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="figures/DFA.png" class="" height="900"></p>
+<figcaption>Adapted from Linkenkaer-Hansen et al.<sup>1</sup></figcaption>
+</figure>
+</div>
 </div>
 <aside class="notes">
 <p>Now we will look at a set of conditions where scale invariance emerges from simple, local rules.</p>
@@ -1432,7 +1440,7 @@ Todd Zorick, Mark Mandelkern. <span>“Multifractal Detrended Fluctuation Analys
   <script src="pres_files/libs/revealjs/plugin/reveal-menu/menu.js"></script>
   <script src="pres_files/libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
   <script src="pres_files/libs/revealjs/plugin/quarto-support/support.js"></script>
-  
+
 
   <script src="pres_files/libs/revealjs/plugin/notes/notes.js"></script>
   <script src="pres_files/libs/revealjs/plugin/search/search.js"></script>
@@ -1454,7 +1462,7 @@ Todd Zorick, Mark Mandelkern. <span>“Multifractal Detrended Fluctuation Analys
 'jumpToSlide': true,
 'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
 'smaller': false,
- 
+
         // Display controls in the bottom right corner
         controls: false,
 
@@ -1681,14 +1689,14 @@ Todd Zorick, Mark Mandelkern. <span>“Multifractal Detrended Fluctuation Analys
           toggleBodyColorMode(bsSheetEl);
         }
       }
-      toggleBodyColorPrimary();  
+      toggleBodyColorPrimary();
       const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
       tabsets.forEach(function(tabset) {
         const tabby = new Tabby('#' + tabset.id);
       });
       const isCodeAnnotation = (el) => {
         for (const clz of el.classList) {
-          if (clz.startsWith('code-annotation-')) {                     
+          if (clz.startsWith('code-annotation-')) {
             return true;
           }
         }
@@ -1708,11 +1716,11 @@ Todd Zorick, Mark Mandelkern. <span>“Multifractal Detrended Fluctuation Analys
           button.setAttribute("data-bs-toggle", "tooltip");
           button.setAttribute("data-bs-placement", "left");
           button.setAttribute("data-bs-title", "Copied!");
-          tooltip = new bootstrap.Tooltip(button, 
-            { trigger: "manual", 
+          tooltip = new bootstrap.Tooltip(button,
+            { trigger: "manual",
               customClass: "code-copy-button-tooltip",
               offset: [0, -8]});
-          tooltip.show();    
+          tooltip.show();
         }
         setTimeout(function() {
           if (tooltip) {
@@ -1790,7 +1798,7 @@ Todd Zorick, Mark Mandelkern. <span>“Multifractal Detrended Fluctuation Analys
         }
           config['offset'] = [0,0];
           config['maxWidth'] = 700;
-        window.tippy(el, config); 
+        window.tippy(el, config);
       }
       const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
       for (var i=0; i<noterefs.length; i++) {
@@ -1847,6 +1855,6 @@ Todd Zorick, Mark Mandelkern. <span>“Multifractal Detrended Fluctuation Analys
       }
     });
     </script>
-    
+
 
 </body></html>
